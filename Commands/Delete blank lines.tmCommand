@@ -8,7 +8,8 @@
 	<string>saveActiveFile</string>
 	<key>command</key>
 	<string>#!/usr/bin/env bash
-
+sed /^$/d
+sed /^[[:space:]]$/d
 sed -e :a -e '/^\n*$/{$d;N;ba' -e '}'</string>
 	<key>input</key>
 	<string>document</string>
